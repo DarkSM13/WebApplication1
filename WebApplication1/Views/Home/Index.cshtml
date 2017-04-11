@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>KOnferencje24 - chat</h2>
+
+@using (Html.BeginForm("StartChat","Home"))
+{
+    @Html.Label("Wybierz nazwe")
+    @Html.TextBox("Nazwa")
+    <input type="submit" value="ENTER"/>
+}
